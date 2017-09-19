@@ -24,17 +24,17 @@
             CloudPosInterface.printText(1,'106年09-10月');
             CloudPosInterface.printText(1,'XX-12345678');
 
-            CloudPosInterface.setPrintFontSize(0);
-            CloudPosInterface.printText(1,'2017-09-20 12:40:59');
-            CloudPosInterface.printText(1,'隨機碼：9999 總計：8787');
-            CloudPosInterface.printText(1,'賣方97311466');
+            CloudPosInterface.setPrintFontSize(1);
+            CloudPosInterface.printText(0,'2017-09-20 12:40:59');
+            CloudPosInterface.printText(0,'隨機碼：9999 總計：8787');
+            CloudPosInterface.printText(0,'賣方97311466');
 
-            CloudPosInterface.printBarcode(1,'1234556677888');
+            CloudPosInterface.printBarcode(1,'1234556677888123123');
             CloudPosInterface.printDualQrcode('android-debug-beta-20170714.apk','android-debug-release.apk');
             // CloudPosInterface.printQrcode(1,'JoshGguu123');
 
-            CloudPosInterface.printText(1,'精誠資訊股份有限公司 序:12345');
-            CloudPosInterface.printText(1,'退貨憑電子發票證明聯正本辦理');
+            CloudPosInterface.printText(0,'精誠資訊股份有限公司 序:12345');
+            CloudPosInterface.printText(0,'退貨憑電子發票證明聯正本辦理');
 
             CloudPosInterface.feedPaper(5);
             CloudPosInterface.printStart(); 
