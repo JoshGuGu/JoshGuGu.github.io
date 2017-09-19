@@ -15,7 +15,13 @@
     //     });
     // });
         if (typeof CloudPosInterface != 'undefined') {
-            CloudPosInterface.showToast('JoshGugu');
+            // CloudPosInterface.showToast('JoshGugu');
+            CloudPosInterface.initPrinter();
+            CloudPosInterface.setPrintFontSize(1);
+            CloudPosInterface.printText('1','JoshGUGU');
+            CloudPosInterface.printBarcode('1','1234556677888');
+            CloudPosInterface.feedPaper(5);
+            CloudPosInterface.printStart();
         }
     </script>
     <style>
