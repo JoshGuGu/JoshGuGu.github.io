@@ -43,9 +43,9 @@
 
     }
 
-    function printResultCallback(printResult) {
-        console.log('printResultCallback:' + printResult);
-        alert("Print Result:" + printResult);
+    function printResultCallback(statusCode, desc) {
+        console.log('printResultCallback:' + statusCode + 'Desc:' + desc);
+        alert('printResultCallback:' + statusCode + 'Desc:' + desc);
     }
 
     </script>
