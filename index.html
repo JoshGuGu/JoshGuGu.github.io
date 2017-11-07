@@ -19,7 +19,9 @@
             $.ajax({
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
-                    'Access-Control-Allow-Origin' : '*'
+                    'Access-Control-Allow-Origin' : 'https://joshgugu.github.io',
+                    'Access-Control-Allow-Methods' : 'GET, POST, PUT, DELETE, OPTIONS',
+                    'Access-Control-Allow-Headers': 'X-Requested-With, Content-Type, Accept'
 
                 },
                 url: 'https://210.63.32.114/APPReload/Home',
@@ -32,7 +34,7 @@
                 },
                 error: function(request, status, exception) {
                     console.log(request.responseText);
-                    document.write(request.responseText);
+                    // document.write(request.responseText);
                     console.log(exception);
                     console.log(status);
                 }
