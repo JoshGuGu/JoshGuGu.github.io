@@ -18,7 +18,9 @@
             var uid = $('#uid').val();
             $.ajax({
                 headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Access-Control-Allow-Origin' : '*'
+
                 },
                 url: 'https://210.63.32.114/APPReload/Home',
                 data: 'jsondata={"ReloadId":"' + uid + '","Mac":"EE-9A-DE-86-82-DD","ReloadInput":"rV5sgL3mJtk38/pnhCxSDbPl3bu4cnKrq+u4I5tfHkYl4zNvfXsj20t/v1Zg4sORofsv631lBr0d1qHOLUbg01PsWkqM7mU2Pczgt1r30G6fIBUyLHBhcp0zJlTv5S3mS1U0zFNRJ84VVhzod0PT6mnpLxsyM7MbL18dVxRoknLYD3zXwsVgoQIk16UZuSvNtDcT6tRPs71lJ9E2b0ZUog==","Mask":"a686c886fe352a3dc116b00ad7b19de7"}',
