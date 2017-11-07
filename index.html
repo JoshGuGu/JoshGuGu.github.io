@@ -14,36 +14,61 @@
     $(document).ready(function() {
 
 
-        $('#uid').val(parseInt(Math.random()*100000));
+        // $('#uid').val(parseInt(Math.random() * 100000));
 
         $('#getItem').click(function() {
-            var uid = $('#uid').val();
-            $.ajax({
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                    // 'Access-Control-Allow-Origin' : '*',
-                    // 'Access-Control-Allow-Methods' : 'GET, POST, PUT, DELETE, OPTIONS',
-                    // 'Access-Control-Allow-Headers': 'X-Requested-With, Content-Type, Accept'
+            //     var uid = $('#uid').val();
+            //     $.ajax({
+            //         headers: {
+            //             'Content-Type': 'application/x-www-form-urlencoded'
+            //             // 'Access-Control-Allow-Origin' : '*',
+            //             // 'Access-Control-Allow-Methods' : 'GET, POST, PUT, DELETE, OPTIONS',
+            //             // 'Access-Control-Allow-Headers': 'X-Requested-With, Content-Type, Accept'
 
-                },
-                url: 'https://210.63.32.114/APPReload/Home',
-                data: 'jsondata={"ReloadId":"' + uid + '","Mac":"EE-9A-DE-86-82-DD","ReloadInput":"rV5sgL3mJtk38/pnhCxSDbPl3bu4cnKrq+u4I5tfHkYl4zNvfXsj20t/v1Zg4sORofsv631lBr0d1qHOLUbg01PsWkqM7mU2Pczgt1r30G6fIBUyLHBhcp0zJlTv5S3mS1U0zFNRJ84VVhzod0PT6mnpLxsyM7MbL18dVxRoknLYD3zXwsVgoQIk16UZuSvNtDcT6tRPs71lJ9E2b0ZUog==","Mask":"a686c886fe352a3dc116b00ad7b19de7"}',
-                type: 'post',
-                // processData: false,
-                // dataType: 'json',
-                success: function(response) {
-                    console.log(response);
-                    document.write(response);
-                },
-                error: function(request, status, exception) {
-                    console.log(request.responseText);
-                    // document.write(request.responseText);
-                    console.log(exception);
-                    console.log(status);
-                }
-            });
-            console.log(uid);
+            //         },
+            //         url: 'https://210.63.32.114/APPReload/Home',
+            //         data: 'jsondata={"ReloadId":"' + uid + '","Mac":"EE-9A-DE-86-82-DD","ReloadInput":"rV5sgL3mJtk38/pnhCxSDbPl3bu4cnKrq+u4I5tfHkYl4zNvfXsj20t/v1Zg4sORofsv631lBr0d1qHOLUbg01PsWkqM7mU2Pczgt1r30G6fIBUyLHBhcp0zJlTv5S3mS1U0zFNRJ84VVhzod0PT6mnpLxsyM7MbL18dVxRoknLYD3zXwsVgoQIk16UZuSvNtDcT6tRPs71lJ9E2b0ZUog==","Mask":"a686c886fe352a3dc116b00ad7b19de7"}',
+            //         type: 'post',
+            //         crossDomain: true,
+            //         // processData: false,
+            //         // dataType: 'json',
+            //         success: function(response) {
+            //             console.log(response);
+            //             document.write(response);
+            //         },
+            //         error: function(request, status, exception) {
+            //             console.log(request.responseText);
+            //             // document.write(request.responseText);
+            //             console.log(exception);
+            //             console.log(status);
+            //         }
+            //     });
+            //     console.log(uid);
+
+            function post_to_url(path) {
+                // The rest of this code assumes you are not using a library.
+                // It can be made less wordy if you use one.
+                var form = document.createElement("form");
+                form.setAttribute("method", 'post');
+                form.setAttribute("action", path);
+
+
+                var hiddenField = document.createElement("input");
+                hiddenField.setAttribute("type", "hidden");
+                hiddenField.setAttribute("name", "jsondata");
+                hiddenField.setAttribute("value", '{"ReloadId":"' + '1231234' + '","Mac":"EE-9A-DE-86-82-DD","ReloadInput":"rV5sgL3mJtk38/pnhCxSDbPl3bu4cnKrq+u4I5tfHkYl4zNvfXsj20t/v1Zg4sORofsv631lBr0d1qHOLUbg01PsWkqM7mU2Pczgt1r30G6fIBUyLHBhcp0zJlTv5S3mS1U0zFNRJ84VVhzod0PT6mnpLxsyM7MbL18dVxRoknLYD3zXwsVgoQIk16UZuSvNtDcT6tRPs71lJ9E2b0ZUog==","Mask":"a686c886fe352a3dc116b00ad7b19de7"}');
+
+                form.appendChild(hiddenField);
+
+
+                document.body.appendChild(form); // Not entirely sure if this is necessary
+                form.submit();
+            }
+
+            post_to_url('https://210.63.32.114/APPReload/Home');
+
         });
+
 
     });
     </script>
