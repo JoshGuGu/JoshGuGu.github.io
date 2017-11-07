@@ -1,16 +1,54 @@
 <html>
-    <body '>
-        <form name='main' id='main' action='https://sslpayment.uwccb.com.tw/EPOSService/Payment/OrderInitial.aspx' method='post' >
-            <input type=hidden name='strRqXML' value='
-            <MERCHANTXML>
-                <CAVALUE>0622FF6F2AABCBC4545E5C25F2768A2E</CAVALUE>
-                <ORDERINFO>
-                    <STOREID>010300378</STOREID>
-                    <ORDERNUMBER>8083</ORDERNUMBER>
-                    <AMOUNT>123</AMOUNT>
-                </ORDERINFO>
-            </MERCHANTXML>'>
-        </form>
-    </body>
-    <script>document.getElementById('main').submit(); </script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js" ></script> -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <!-- <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#uid').val(parseInt(Math.random()*100000));
+
+        $('#getItem').click(function() {
+            var uid = $('#uid').val();
+            $.ajax({
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                url: 'https://210.63.32.114/APPReload/Home',
+                data: 'jsondata={"ReloadId":"' + uid + '","Mac":"EE-9A-DE-86-82-DD","ReloadInput":"rV5sgL3mJtk38/pnhCxSDbPl3bu4cnKrq+u4I5tfHkYl4zNvfXsj20t/v1Zg4sORofsv631lBr0d1qHOLUbg01PsWkqM7mU2Pczgt1r30G6fIBUyLHBhcp0zJlTv5S3mS1U0zFNRJ84VVhzod0PT6mnpLxsyM7MbL18dVxRoknLYD3zXwsVgoQIk16UZuSvNtDcT6tRPs71lJ9E2b0ZUog==","Mask":"a686c886fe352a3dc116b00ad7b19de7"}',
+                type: 'post',
+                dataType: 'json',
+                cache: false,
+                success: function(response) {
+                    console.log(JSON.stringify(response.data, null, "    "));
+                },
+                error: function(request, status, exception) {
+                    console.log(request.responseText);
+                    document.write(request.responseText);
+                    console.log(exception);
+                    console.log(status);
+                }
+            });
+            console.log(uid);
+        });
+
+    });
+    </script>
+</head>
+
+<body>
+    <h3 class="ui-bar ui-bar-a ui-corner-all">Starbuck Test</h3>
+    <div class="ui-body">
+        ID:
+        <input type="text" id="uid" class="ui-shadow">
+        <button id="getItem" class="ui-btn ui-corner-all ui-shadow">Send</button>
+    </div>
+</body>
+
 </html>
