@@ -14,10 +14,10 @@
     $(document).ready(function() {
 
 
-        // $('#uid').val(parseInt(Math.random() * 100000));
+        $('#uid').val(parseInt(Math.random() * 100000));
 
         $('#getItem').click(function() {
-            //     var uid = $('#uid').val();
+                var uid = $('#uid').val();
             //     $.ajax({
             //         headers: {
             //             'Content-Type': 'application/x-www-form-urlencoded'
@@ -56,7 +56,7 @@
                 var hiddenField = document.createElement("input");
                 hiddenField.setAttribute("type", "hidden");
                 hiddenField.setAttribute("name", "jsondata");
-                hiddenField.setAttribute("value", '{"ReloadId":"' + '1231234' + '","Mac":"EE-9A-DE-86-82-DD","ReloadInput":"rV5sgL3mJtk38/pnhCxSDbPl3bu4cnKrq+u4I5tfHkYl4zNvfXsj20t/v1Zg4sORofsv631lBr0d1qHOLUbg01PsWkqM7mU2Pczgt1r30G6fIBUyLHBhcp0zJlTv5S3mS1U0zFNRJ84VVhzod0PT6mnpLxsyM7MbL18dVxRoknLYD3zXwsVgoQIk16UZuSvNtDcT6tRPs71lJ9E2b0ZUog==","Mask":"a686c886fe352a3dc116b00ad7b19de7"}');
+                hiddenField.setAttribute("value", '{"ReloadId":"' + uid + '","Mac":"EE-9A-DE-86-82-DD","ReloadInput":"rV5sgL3mJtk38/pnhCxSDbPl3bu4cnKrq+u4I5tfHkYl4zNvfXsj20t/v1Zg4sORofsv631lBr0d1qHOLUbg01PsWkqM7mU2Pczgt1r30G6fIBUyLHBhcp0zJlTv5S3mS1U0zFNRJ84VVhzod0PT6mnpLxsyM7MbL18dVxRoknLYD3zXwsVgoQIk16UZuSvNtDcT6tRPs71lJ9E2b0ZUog==","Mask":"a686c886fe352a3dc116b00ad7b19de7"}');
 
                 form.appendChild(hiddenField);
 
