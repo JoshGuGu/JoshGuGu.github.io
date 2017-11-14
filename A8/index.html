@@ -14,18 +14,21 @@
         SmartPosInterface.printText('\n電子發票證明\n');
         SmartPosInterface.printText('106年09-10月\n');
         SmartPosInterface.printText('XX-12345678\n');
+        
         SmartPosInterface.setPrintFontSize(24);
         SmartPosInterface.setPrintAlignment(0)
         SmartPosInterface.printText('2017-09-20 12:40:59\n');
         SmartPosInterface.printText('隨機碼:9999 總計:8787\n');
-        SmartPosInterface.printText('賣方97311466');
+        SmartPosInterface.printText('賣方97311466\n');
+        
         SmartPosInterface.setPrintAlignment(1)
         SmartPosInterface.printBarcode('10610XX123456789999');
         SmartPosInterface.printDualQrcode('AB1122334410205239999000001440000015400000000012 34567ydXZt4LAN1UHN/j 1juVcRA==:**********:3:3:0:乾電池:1:105:',
             'AB112233441020523999900000144000001540000000001234567ydXZt4LAN1UHN/j 1juVcRA==:**********:3:3:0:QQQQQ:1:105:');
-        // SmartPosInterface.setPrintAlignment(0)
-        SmartPosInterface.printText('\n精誠資訊股份有限公司 序:12345\n');
-        SmartPosInterface.printText('退貨憑電發票證明正本辦理\n');
+        
+        SmartPosInterface.setPrintAlignment(0)
+        SmartPosInterface.printText('\n精誠資訊股份有限公司 序:12345');
+        SmartPosInterface.printText('\n退貨憑電發票證明正本辦理');
         SmartPosInterface.feedPaper(4);
     }
 
