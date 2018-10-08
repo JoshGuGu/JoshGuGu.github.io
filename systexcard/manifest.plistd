@@ -11,19 +11,19 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://joshgugu.github.io/SystexCard.ipa</string>
+					<string>https://joshgugu.github.io/systexcard/systexcard.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>display-image</string>
 					<key>url</key>
-					<string>https://joshgugu.github.io/image.57x57.png</string>
+					<string>https://joshgugu.github.io/systexcard/57x57.png</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>full-size-image</string>
 					<key>url</key>
-					<string>https://joshgugu.github.io/image.512x512.png</string>
+					<string>https://joshgugu.github.io/systexcard/512x512.png</string>
 				</dict>
 			</array>
 			<key>metadata</key>
@@ -35,7 +35,7 @@
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>快點吧</string>
+				<string>SystexCard</string>
 			</dict>
 		</dict>
 	</array>
