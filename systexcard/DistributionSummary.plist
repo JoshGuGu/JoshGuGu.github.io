@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SystexCard.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>6838535D41D5A048B011C88B33FD1C138837E288</string>
+				<key>dateExpires</key>
+				<string>2021/9/19</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>95E44WWFM7.com.systex.quickbot</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>95E44WWFM7</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>95E44WWFM7.com.systex.quickbot</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>SystexCard.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>b84a5365-35ff-46f7-8d72-2e1edce5d47d</string>
+				<key>name</key>
+				<string>forComAll</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>95E44WWFM7</string>
+				<key>name</key>
+				<string>SYSTEX Corporation</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
