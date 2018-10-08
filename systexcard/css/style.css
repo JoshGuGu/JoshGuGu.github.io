@@ -775,8 +775,8 @@ body{
 		display:none;
 	}
 	.header-right span{
-		width:200px;
-		height:200px;
+		width:100px;
+		height:201px;
 		display:block;
 		background:url(../images/header-divices.png) no-repeat;
 		margin: 0 auto;
