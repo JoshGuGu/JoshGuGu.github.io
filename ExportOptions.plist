@@ -3,11 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>compileBitcode</key>
-	<true/>
+	<false/>
+	<key>destination</key>
+	<string>export</string>
 	<key>manifest</key>
 	<dict>
 		<key>appURL</key>
-		<string>https://joshgugu.github.io/JCWebView.ipa</string>
+		<string>https://joshgugu.github.io/mpos346.ipa</string>
 		<key>displayImageURL</key>
 		<string>https://joshgugu.github.io/image.57x57.png</string>
 		<key>fullSizeImageURL</key>
@@ -17,7 +19,7 @@
 	<string>enterprise</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.systex.JCWebView</key>
+		<key>com.taishinbank.mpos.test</key>
 		<string>forComAll</string>
 	</dict>
 	<key>signingCertificate</key>
