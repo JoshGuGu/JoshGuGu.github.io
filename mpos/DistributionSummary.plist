@@ -13,14 +13,32 @@
 			<key>certificate</key>
 			<dict>
 				<key>SHA1</key>
-				<string></string>
+				<string>6838535D41D5A048B011C88B33FD1C138837E288</string>
 				<key>dateExpires</key>
-				<string></string>
+				<string>2021/9/19</string>
 				<key>type</key>
-				<string>Unknown</string>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>95E44WWFM7.com.taishinbank.mpos.test</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>95E44WWFM7</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array/>
 			</dict>
 			<key>name</key>
-			<string>mPOS.app</string>
+			<string>mPOS 3.4.8.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>f31180d5-b0f4-4406-8eea-398730b866a9</string>
+				<key>name</key>
+				<string>forComAll</string>
+			</dict>
 			<key>team</key>
 			<dict>
 				<key>id</key>

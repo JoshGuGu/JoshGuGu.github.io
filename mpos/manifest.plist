@@ -31,11 +31,13 @@
 				<key>bundle-identifier</key>
 				<string>com.taishinbank.mpos.test</string>
 				<key>bundle-version</key>
-				<string>3.4.6</string>
+				<string>3.4.8</string>
 				<key>kind</key>
 				<string>software</string>
+				<key>platform-identifier</key>
+				<string>com.apple.platform.iphoneos</string>
 				<key>title</key>
-				<string>mPOS</string>
+				<string>mPOS 3.4.8</string>
 			</dict>
 		</dict>
 	</array>
